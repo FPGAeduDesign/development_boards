@@ -23,12 +23,14 @@
 --   * interruptor: 1110 por 10ns
 --   * interruptor: 1111 por 10ns
 --   * fin
+--
 -- Salidas Esperadas: sigue el mismo comportamiento que la entrada
 --   * leds: 1000 por 10ns
 --   * leds: 1100 por 10ns
 --   * leds: 1110 por 10ns
 --   * leds: 1111 por 10ns
 --   * fin
+--
 -- Notas:
 --   - Este banco de pruebas funciona en cualquier herramienta de simulación 
 --     como GHDL, ModelSim, QuestaSim, ISim, etc. Puedes ver el demo de
