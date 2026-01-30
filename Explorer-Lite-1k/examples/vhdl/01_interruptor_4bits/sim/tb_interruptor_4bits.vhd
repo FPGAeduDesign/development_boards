@@ -24,7 +24,7 @@
 --   * señal_4: 1111
 --
 -- Salidas Esperadas: sigue el mismo comportamiento que la entrada
---   * señal_out1: 1000"
+--   * señal_out1: 1000
 --   * señal_out1: 1100
 --   * señal_out1: 1110
 --   * señal_out1: 1111
@@ -41,6 +41,7 @@
 -- Fecha        | Versión | Autor      | Descripción
 --------------------------------------------------------------------------------
 -- 17/12/2025   | 1.0     | R.S.G.B    | Versión inicial
+-- 30/01/2026   | 1.1     | R.S.G.B    | Eliminación de "
 --------------------------------------------------------------------------------
 
 library ieee;

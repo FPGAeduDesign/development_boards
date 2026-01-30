@@ -1,4 +1,6 @@
 --------------------------------------------------------------------------------
+--                            FPGAeduDesign
+--------------------------------------------------------------------------------
 -- Proyecto    : Encender leds usando el interruptor de 4 bits
 -- Placa       : Explorer Lite-1k (antes FPGA NANO 1K)
 -- Archivo     : interruptor_4bits.vhd
@@ -19,6 +21,7 @@
 -- Fecha        | Versión | Autor      | Descripción
 --------------------------------------------------------------------------------
 -- 13/12/2025   | 1.0     | R.S.G.B    | Versión inicial
+-- 30/01/2026   | 1.1     | R.S.G.B    | Header del proyecto
 --------------------------------------------------------------------------------
 
 library ieee;
