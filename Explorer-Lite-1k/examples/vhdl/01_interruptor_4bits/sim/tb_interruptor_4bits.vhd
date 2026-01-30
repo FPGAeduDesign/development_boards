@@ -18,17 +18,17 @@
 --   interruptor_4bits.vhd
 --
 -- Entradas de Prueba: se tiene 4 pruebas
---   * señal_1: 1000
---   * señal_2: 1100
---   * señal_3: 1110
---   * señal_4: 1111
---
+--   * interruptor: 1000 por 10ns
+--   * interruptor: 1100 por 10ns
+--   * interruptor: 1110 por 10ns
+--   * interruptor: 1111 por 10ns
+--   * fin
 -- Salidas Esperadas: sigue el mismo comportamiento que la entrada
---   * señal_out1: 1000"
---   * señal_out1: 1100
---   * señal_out1: 1110
---   * señal_out1: 1111
---
+--   * leds: 1000 por 10ns
+--   * leds: 1100 por 10ns
+--   * leds: 1110 por 10ns
+--   * leds: 1111 por 10ns
+--   * fin
 -- Notas:
 --   - Este banco de pruebas funciona en cualquier herramienta de simulación 
 --     como GHDL, ModelSim, QuestaSim, ISim, etc. Puedes ver el demo de
