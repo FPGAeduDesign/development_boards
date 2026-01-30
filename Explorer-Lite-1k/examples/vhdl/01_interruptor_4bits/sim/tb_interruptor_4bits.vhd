@@ -24,15 +24,15 @@
 --   * señal_4: 1111
 --
 -- Salidas Esperadas: sigue el mismo comportamiento que la entrada
---   * señal_out1: 1000
+--   * señal_out1: 1000"
 --   * señal_out1: 1100
 --   * señal_out1: 1110
 --   * señal_out1: 1111
 --
 -- Notas:
---   - Simulación realizada para GHDL, copiar este archivo y el DUT para otros
---	   softwares de simulación como ModelSim, QuestaSim, ISim, etc. En su
---	   respectivo área de trabajo (workspace). Puedes ver el demo en YouTube.
+--   - La simulación funciona en cualquier herramienta de simulación como 
+--     GHDL, ModelSim, QuestaSim, ISim, etc. Puedes ver el demo de
+--     funcionamiento en nuestro canal de YouTube: FPGAeduDesign.
 --------------------------------------------------------------------------------
 -- Copyright (c) 2025 FPGAeduDesign - Roly Sandro Gutierrez Benito
 --------------------------------------------------------------------------------
@@ -41,7 +41,6 @@
 -- Fecha        | Versión | Autor      | Descripción
 --------------------------------------------------------------------------------
 -- 17/12/2025   | 1.0     | R.S.G.B    | Versión inicial
--- 30/01/2026   | 1.1     | R.S.G.B    | Eliminación de "
 --------------------------------------------------------------------------------
 
 library ieee;
