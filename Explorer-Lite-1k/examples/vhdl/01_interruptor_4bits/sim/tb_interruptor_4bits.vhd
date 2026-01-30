@@ -30,8 +30,8 @@
 --   * señal_out1: 1111
 --
 -- Notas:
---   - La simulación funciona en cualquier herramienta de simulación como 
---     GHDL, ModelSim, QuestaSim, ISim, etc. Puedes ver el demo de
+--   - Este banco de pruebas funciona en cualquier herramienta de simulación 
+--     como GHDL, ModelSim, QuestaSim, ISim, etc. Puedes ver el demo de
 --     funcionamiento en nuestro canal de YouTube: FPGAeduDesign.
 --------------------------------------------------------------------------------
 -- Copyright (c) 2025 FPGAeduDesign - Roly Sandro Gutierrez Benito
