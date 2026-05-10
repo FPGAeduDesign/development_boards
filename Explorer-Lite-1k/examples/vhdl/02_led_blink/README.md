@@ -96,14 +96,18 @@ El reloj de 27 MHz está conectado al pin 47 de la FPGA.
 El siguiente esquemático muestra el diseño generado en Gowin EDA.
 
 <p align="center">
-  <img src="docs/led_blink-esq.png" width="700">
+  <img src="../01_interruptor_4bits/docs/led_blink-esq.png" width="700">
 </p>
 
 ---
 
-## Nota sobre pin dedicado de reloj
+## Nota sobre pines SSPI
 
-La herramienta de síntesis puede generar una advertencia indicando que el reloj no fue creado como señal dedicada. La siguiente imagen muestra la ubicación del pin de reloj dedicado en el chip.
+Los pines 22 y 24 corresponden a pines **SSPI** (Serial SPI) del chip,
+que tienen función primaria de configuración. Al usarlos como salidas
+de usuario para los LEDs, el enrutador los asigna mediante recursos
+genéricos en lugar de los buffers dedicados. Esto no afecta el
+funcionamiento en este diseño.
 
 <p align="center">
   <img src="docs/dedicated_pin-chip.png" width="500">
