@@ -128,13 +128,13 @@ sim/tb_interruptor_4bits.vhd
 
 ## GHDL
 
-Repositorio oficial:
+Repositorio oficial [GHDL](https://ghdl.github.io/ghdl/):
 
 ```text
 https://github.com/ghdl/ghdl
 ```
 
-Documentación:
+Documentación y guía de [GHDL](https://ghdl.github.io/ghdl/):
 
 ```text
 https://ghdl.github.io/ghdl/
@@ -248,7 +248,7 @@ Conectar la placa Explorer Lite-1k y cargar el archivo `.fs` generado.
 Puedes ver el funcionamiento real del proyecto en el siguiente video:
 
 <p align="center">
-  <a href="https://www.youtube.com/shorts/UegA7kEnzGM">
+  <a href="https://www.youtube.com/shorts/UegA7kEnzGM" target="_blank">
     <img src="https://img.youtube.com/vi/UegA7kEnzGM/maxresdefault.jpg" width="500">
   </a>
 </p>
