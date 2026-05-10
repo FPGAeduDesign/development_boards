@@ -247,11 +247,16 @@ Conectar la placa Explorer Lite-1k y cargar el archivo `.fs` generado.
 
 Puedes ver el funcionamiento real del proyecto en los siguientes recursos:
 
-```text
-docs/interruptores_4bits.mp4
-```
+<p align="center">
+  <video src="docs/interruptores_4bits.mp4" width="80%" controls></video>
+</p>
+
 - Video Short en YouTube:  
-  https://www.youtube.com/shorts/UegA7kEnzGM
+# Resultado final
+
+Puedes ver el funcionamiento real del proyecto en el siguiente video:
+
+[![Ver video](https://img.youtube.com/vi/UegA7kEnzGM/maxresdefault.jpg)](https://www.youtube.com/shorts/UegA7kEnzGM)
 ---
 
 # Autor
