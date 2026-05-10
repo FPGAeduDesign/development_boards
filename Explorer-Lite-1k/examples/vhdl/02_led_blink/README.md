@@ -110,7 +110,7 @@ genéricos en lugar de los buffers dedicados. Esto no afecta el
 funcionamiento en este diseño.
 
 <p align="center">
-  <img src="docs/dedicated_pin-chip.png" width="500">
+  <img src="docs/dedicated_pin-chip.png" width="900">
 </p>
 
 ---
