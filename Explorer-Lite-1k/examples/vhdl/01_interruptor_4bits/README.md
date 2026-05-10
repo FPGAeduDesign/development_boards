@@ -69,7 +69,7 @@ Los interruptores utilizados corresponden a los siguientes pines del FPGA:
 Referencia visual de los interruptores:
 
 <p align="center">
-  <img src="docs/interruptor_4bits-board.png" width="700">
+  <img src="docs/interruptor_4bits-board.png" width="400">
 </p>
 
 ---
@@ -245,18 +245,14 @@ Conectar la placa Explorer Lite-1k y cargar el archivo `.fs` generado.
 
 # Resultado final
 
-Puedes ver el funcionamiento real del proyecto en los siguientes recursos:
-
-<p align="center">
-  <video src="docs/interruptores_4bits.mp4" width="80%" controls></video>
-</p>
-
-- Video Short en YouTube:  
-# Resultado final
-
 Puedes ver el funcionamiento real del proyecto en el siguiente video:
 
-[![Ver video](https://img.youtube.com/vi/UegA7kEnzGM/maxresdefault.jpg)](https://www.youtube.com/shorts/UegA7kEnzGM)
+<p align="center">
+  <a href="https://www.youtube.com/shorts/UegA7kEnzGM">
+    <img src="https://img.youtube.com/vi/UegA7kEnzGM/maxresdefault.jpg" width="500">
+  </a>
+</p>
+
 ---
 
 # Autor
