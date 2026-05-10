@@ -128,33 +128,13 @@ sim/tb_interruptor_4bits.vhd
 
 ## GHDL
 
-Repositorio oficial [GHDL](https://ghdl.github.io/ghdl/):
-
-```text
-https://github.com/ghdl/ghdl
-```
-
-Documentación y guía de [GHDL](https://ghdl.github.io/ghdl/):
-
-```text
-https://ghdl.github.io/ghdl/
-```
+Repositorio oficial de [GHDL](https://github.com/ghdl/ghdl) y [guía](https://ghdl.github.io/ghdl/) de uso.
 
 ---
 
 ## GTKWave
 
-Repositorio oficial:
-
-```text
-https://github.com/gtkwave/gtkwave
-```
-
-Página oficial:
-
-```text
-https://gtkwave.sourceforge.net/
-```
+Repositorio oficial de [GTKWave](https://github.com/gtkwave/gtkwave) y página para su [descarga](https://gtkwave.sourceforge.net/).
 
 ---
 
