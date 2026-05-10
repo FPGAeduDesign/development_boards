@@ -102,7 +102,7 @@ Relación entre interruptores y LEDs:
 Referencia visual de los LEDs:
 
 <p align="center">
-  <img src="docs/leds_4bits-board.png" width="700">
+  <img src="docs/leds_4bits-board.png" width="400">
 </p>
 
 ---
@@ -245,20 +245,13 @@ Conectar la placa Explorer Lite-1k y cargar el archivo `.fs` generado.
 
 # Resultado final
 
-Puedes ver el funcionamiento real del proyecto en el siguiente video:
+Puedes ver el funcionamiento real del proyecto en los siguientes recursos:
 
 ```text
-[Aquí colocar enlace del video]
+docs/interruptores_4bits.mp4
 ```
-
----
-
-# Archivo principal
-
-```text
-src/interruptor_4bits.vhd
-```
-
+- Video Short en YouTube:  
+  https://www.youtube.com/shorts/UegA7kEnzGM
 ---
 
 # Autor
