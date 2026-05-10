@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📦 Pre-built Bitstreams
+# 📦 Bitstreams Pre-compilados
 
 **[🇬🇧 English](README.md)** | **[🇪🇸 Español](README.es.md)**
 
@@ -8,66 +8,66 @@
 
 ---
 
-This folder contains ready-to-flash `.fs` bitstream files for quick testing of your FPGA board without needing to install any synthesis tools.
+Esta carpeta contiene archivos bitstream `.fs` listos para flashear y probar rápidamente tu placa FPGA sin necesidad de instalar herramientas de síntesis.
 
-## 🎯 What's Inside
+## 🎯 Qué Hay Aquí
 
-These pre-compiled binaries allow you to test all the peripherals on your board instantly:
+Estos binarios pre-compilados te permiten probar todos los periféricos de tu placa al instante:
 
-| File | Description | Peripherals Tested |
-|------|-------------|-------------------|
-| `led_blink.fs` | Classic LED blinker | LEDs |
-| `uart_echo.fs` | UART loopback test | UART, LEDs |
-| `button_led.fs` | Button to LED mapping | Buttons, LEDs |
-| `seven_segment.fs` | 7-segment display counter | 7-segment display |
-| `spi_test.fs` | SPI flash communication | SPI Flash, LEDs |
-| `i2c_scanner.fs` | I2C device scanner | I2C bus, UART |
-| `peripheral_demo.fs` | Complete peripheral showcase | All onboard peripherals |
+| Archivo | Descripción | Periféricos Probados |
+|---------|-------------|---------------------|
+| `led_blink.fs` | Parpadeo clásico de LEDs | LEDs |
+| `uart_echo.fs` | Prueba de eco UART | UART, LEDs |
+| `button_led.fs` | Mapeo de botones a LEDs | Botones, LEDs |
+| `seven_segment.fs` | Contador en display de 7 segmentos | Display 7 segmentos |
+| `spi_test.fs` | Comunicación con flash SPI | Flash SPI, LEDs |
+| `i2c_scanner.fs` | Escáner de dispositivos I2C | Bus I2C, UART |
+| `peripheral_demo.fs` | Demostración completa de periféricos | Todos los periféricos |
 
-## 🚀 How to Flash
+## 🚀 Cómo Flashear
 
-### Method 1: Using Gowin Programmer (Recommended)
+### Método 1: Usando Gowin Programmer (Recomendado)
 
 #### Windows / Linux / macOS
 
-1. **Download Gowin Programmer**
-   - Visit: https://www.gowinsemi.com/en/support/download_eda/
-   - Download "Gowin Programmer" (standalone tool, no full IDE needed)
-   - Install and launch the application
+1. **Descargar Gowin Programmer**
+   - Visita: https://www.gowinsemi.com/en/support/download_eda/
+   - Descarga "Gowin Programmer" (herramienta independiente, no necesitas el IDE completo)
+   - Instala e inicia la aplicación
 
-2. **Connect Your Board**
-   - Connect your FPGA board via USB
-   - Power on the board
-   - Wait for drivers to install (Windows)
+2. **Conectar tu Placa**
+   - Conecta tu placa FPGA vía USB
+   - Enciende la placa
+   - Espera a que se instalen los drivers (Windows)
 
-3. **Configure the Programmer**
-   - Open Gowin Programmer
-   - Click **"Scan Device"** or press `Ctrl+D`
-   - Your FPGA should appear in the device list
+3. **Configurar el Programador**
+   - Abre Gowin Programmer
+   - Haz clic en **"Scan Device"** o presiona `Ctrl+D`
+   - Tu FPGA debería aparecer en la lista de dispositivos
    
-4. **Load the Bitstream**
-   - Right-click on the detected device
-   - Select **"Add File"**
-   - Browse to the `.fs` file you want to flash
-   - Set **Operation** to: `embFlash Erase, Program thru GAO-Bridge`
+4. **Cargar el Bitstream**
+   - Haz clic derecho en el dispositivo detectado
+   - Selecciona **"Add File"**
+   - Navega al archivo `.fs` que quieres flashear
+   - Configura **Operation** en: `embFlash Erase, Program thru GAO-Bridge`
    
-5. **Program the Device**
-   - Click the **"Program/Configure"** button (or press `Ctrl+P`)
-   - Wait for "Program done" message
-   - Your board should now be running the design!
+5. **Programar el Dispositivo**
+   - Haz clic en el botón **"Program/Configure"** (o presiona `Ctrl+P`)
+   - Espera el mensaje "Program done"
+   - ¡Tu placa ahora debería estar ejecutando el diseño!
 
-### Method 2: Using OpenFPGALoader (Open Source)
+### Método 2: Usando OpenFPGALoader (Código Abierto)
 
-#### Installation
+#### Instalación
 
 ```bash
 # Ubuntu/Debian
 sudo apt install openfpgaloader
 
-# macOS (with Homebrew)
+# macOS (con Homebrew)
 brew install openfpgaloader
 
-# Or build from source
+# O compilar desde código fuente
 git clone https://github.com/trabucayre/openFPGALoader.git
 cd openFPGALoader
 mkdir build && cd build
@@ -76,127 +76,127 @@ make
 sudo make install
 ```
 
-#### Flashing
+#### Flasheo
 
 ```bash
-# Flash to SRAM (temporary - lost on power cycle)
-openFPGALoader -b YOUR_BOARD led_blink.fs
+# Flashear a SRAM (temporal - se pierde al apagar)
+openFPGALoader -b TU_PLACA led_blink.fs
 
-# Flash to embedded Flash (persistent)
-openFPGALoader -b YOUR_BOARD -f led_blink.fs
+# Flashear a Flash embebida (persistente)
+openFPGALoader -b TU_PLACA -f led_blink.fs
 
-# List supported boards
+# Listar placas soportadas
 openFPGALoader --list-boards
 ```
 
-## 🔧 Troubleshooting
+## 🔧 Solución de Problemas
 
-### Device Not Detected
+### Dispositivo No Detectado
 
 **Windows:**
-- Install Gowin USB drivers from the Gowin Programmer installation folder
-- Check Device Manager for "Unknown Device" and update drivers manually
-- Try a different USB cable (must support data, not just power)
+- Instala los drivers USB de Gowin desde la carpeta de instalación de Gowin Programmer
+- Revisa el Administrador de Dispositivos buscando "Dispositivo Desconocido" y actualiza drivers manualmente
+- Prueba con otro cable USB (debe soportar datos, no solo alimentación)
 
 **Linux:**
-- Add udev rules for USB access:
+- Agrega reglas udev para acceso USB:
   ```bash
   sudo nano /etc/udev/rules.d/90-gowin.rules
   ```
-  Add:
+  Agrega:
   ```
   SUBSYSTEM=="usb", ATTR{idVendor}=="0547", ATTR{idProduct}=="1002", MODE="0666"
   ```
-  Then reload:
+  Luego recarga:
   ```bash
   sudo udevadm control --reload-rules
   sudo udevadm trigger
   ```
 
 **macOS:**
-- Grant USB access permissions when prompted
-- Try unplugging/replugging the board
+- Otorga permisos de acceso USB cuando se solicite
+- Intenta desconectar/reconectar la placa
 
-### Programming Failed
+### Programación Fallida
 
-- Ensure the board is properly powered
-- Try a different USB port (use USB 2.0 ports if USB 3.0 fails)
-- Check that jumpers are in the correct position (see board documentation)
-- Verify the `.fs` file is compatible with your specific board model
+- Asegúrate de que la placa esté correctamente alimentada
+- Prueba con otro puerto USB (usa puertos USB 2.0 si USB 3.0 falla)
+- Verifica que los jumpers estén en la posición correcta (ver documentación de la placa)
+- Confirma que el archivo `.fs` sea compatible con tu modelo específico de placa
 
-### Board Not Working After Flash
+### La Placa No Funciona Después del Flasheo
 
-- Some designs require external connections (e.g., UART needs USB-Serial adapter)
-- Check the design description above for required peripherals
-- Power cycle the board
-- Try reflashing the bitstream
+- Algunos diseños requieren conexiones externas (ej: UART necesita adaptador USB-Serial)
+- Revisa la descripción del diseño arriba para periféricos requeridos
+- Reinicia la placa (apagar y encender)
+- Intenta reflashear el bitstream
 
-## 📖 Design Descriptions
+## 📖 Descripciones de Diseños
 
 ### `led_blink.fs`
-- **What it does**: Blinks all onboard LEDs in sequence
-- **Requirements**: None - works standalone
-- **Expected behavior**: LEDs blink at ~1Hz
-- **Use case**: Verify board is working and clock is running
+- **Qué hace**: Parpadea todos los LEDs de la placa en secuencia
+- **Requisitos**: Ninguno - funciona de forma independiente
+- **Comportamiento esperado**: Los LEDs parpadean a ~1Hz
+- **Caso de uso**: Verificar que la placa funciona y el reloj está corriendo
 
 ### `uart_echo.fs`
-- **What it does**: Echoes back any character received on UART
-- **Requirements**: USB-to-Serial adapter connected to UART pins
-- **Settings**: 115200 baud, 8N1
-- **Expected behavior**: Type in terminal, see characters echoed back
-- **Use case**: Test UART communication
+- **Qué hace**: Devuelve cada carácter recibido por UART
+- **Requisitos**: Adaptador USB-Serial conectado a los pines UART
+- **Configuración**: 115200 baudios, 8N1
+- **Comportamiento esperado**: Escribe en terminal, verás los caracteres devueltos
+- **Caso de uso**: Probar comunicación UART
 
 ### `button_led.fs`
-- **What it does**: Each button controls a corresponding LED
-- **Requirements**: None - works standalone
-- **Expected behavior**: Press button → LED turns on
-- **Use case**: Test button inputs and LED outputs
+- **Qué hace**: Cada botón controla un LED correspondiente
+- **Requisitos**: Ninguno - funciona de forma independiente
+- **Comportamiento esperado**: Presiona botón → LED se enciende
+- **Caso de uso**: Probar entradas de botones y salidas de LEDs
 
 ### `seven_segment.fs`
-- **What it does**: Counts 0-9 on 7-segment display
-- **Requirements**: None - works standalone
-- **Expected behavior**: Display counts up every second
-- **Use case**: Test 7-segment display driver
+- **Qué hace**: Cuenta de 0-9 en display de 7 segmentos
+- **Requisitos**: Ninguno - funciona de forma independiente
+- **Comportamiento esperado**: Display cuenta cada segundo
+- **Caso de uso**: Probar driver de display de 7 segmentos
 
 ### `spi_test.fs`
-- **What it does**: Reads SPI flash ID and blinks LED pattern
-- **Requirements**: None - uses onboard SPI flash
-- **Expected behavior**: LED pattern indicates flash detected
-- **Use case**: Verify SPI flash communication
+- **Qué hace**: Lee ID de flash SPI y parpadea patrón de LEDs
+- **Requisitos**: Ninguno - usa flash SPI integrada
+- **Comportamiento esperado**: Patrón de LEDs indica flash detectada
+- **Caso de uso**: Verificar comunicación con flash SPI
 
 ### `i2c_scanner.fs`
-- **What it does**: Scans I2C bus and reports devices via UART
-- **Requirements**: USB-to-Serial adapter, optional I2C devices
-- **Settings**: 115200 baud, 8N1
-- **Expected behavior**: Terminal shows detected I2C addresses
-- **Use case**: Test I2C bus and detect connected devices
+- **Qué hace**: Escanea el bus I2C y reporta dispositivos vía UART
+- **Requisitos**: Adaptador USB-Serial, dispositivos I2C opcionales
+- **Configuración**: 115200 baudios, 8N1
+- **Comportamiento esperado**: Terminal muestra direcciones I2C detectadas
+- **Caso de uso**: Probar bus I2C y detectar dispositivos conectados
 
 ### `peripheral_demo.fs`
-- **What it does**: Comprehensive test of all board features
-- **Requirements**: USB-to-Serial adapter for status messages
-- **Settings**: 115200 baud, 8N1
-- **Expected behavior**: Interactive demo controlled via UART
-- **Use case**: Complete board validation
+- **Qué hace**: Prueba integral de todas las características de la placa
+- **Requisitos**: Adaptador USB-Serial para mensajes de estado
+- **Configuración**: 115200 baudios, 8N1
+- **Comportamiento esperado**: Demo interactivo controlado vía UART
+- **Caso de uso**: Validación completa de la placa
 
-## 💡 Tips
+## 💡 Consejos
 
-- **First time?** Start with `led_blink.fs` to verify everything works
-- **Need source code?** Check the `../examples/` folder for full projects
-- **Want to modify?** Open the corresponding `.gpr` project file in Gowin EDA
-- **Multiple boards?** Flash different designs to compare functionality
-- **Persistent storage**: Flashing to embedded Flash survives power cycles
+- **¿Primera vez?** Comienza con `led_blink.fs` para verificar que todo funciona
+- **¿Necesitas el código fuente?** Revisa la carpeta `../examples/` para proyectos completos
+- **¿Quieres modificar?** Abre el archivo de proyecto `.gpr` correspondiente en Gowin EDA
+- **¿Múltiples placas?** Flashea diferentes diseños para comparar funcionalidad
+- **Almacenamiento persistente**: Flashear a Flash embebida sobrevive ciclos de apagado
 
-## 📞 Need Help?
+## 📞 ¿Necesitas Ayuda?
 
-- 📖 Check the main [README](../../README.md) for support channels
-- 🐛 Found an issue? Open a GitHub issue
-- 💬 Join our Discord for community support
+- 📖 Consulta el [README](../../README.es.md) principal para canales de soporte
+- 🐛 ¿Encontraste un problema? Abre un issue en GitHub
+- 💬 Únete a nuestro Discord para soporte de la comunidad
 - 📧 Email: support@fpgaedudesign.com
 
 ---
 
 <div align="center">
 
-**Ready to dive deeper?** Check out the [examples folder](../examples/) for full source code! 🚀
+**¿Listo para profundizar?** ¡Revisa la [carpeta de ejemplos](../examples/) para el código fuente completo! 🚀
 
 </div>
