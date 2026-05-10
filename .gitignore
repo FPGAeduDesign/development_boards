@@ -21,7 +21,7 @@ tb_*
 # Bitstream y archivos de programación
 # ============================================================
 *.bit
-*.bin
+# *.bin
 *.binx
 *.db
 *.fs
